@@ -1,9 +1,9 @@
 # Telecommunication Customer Churn Prediction
 
-### **Overview**
+## **Overview**
 A telecommunication company, his mame is **SyriaTel**, he wants to be informed whether a customer will ("soon") stop doing business with him.
 
-### **Business and Data Undertanding**
+## **Business and Data Undertanding**
 
 ### **Business Problem**
 **SyriaTel**, a telecommunications company, is confronted with the challenge of **customer churn**, which occurs when subscribers stop using the company’s services. In the telecom industry, churn has a significant financial impact because acquiring new customers is more expensive than retaining existing ones.
@@ -46,3 +46,24 @@ Key attributes include:
     
 
 This combination of features provides valuable insights into customer behavior and service utilization, making it possible to identify patterns that signal potential churn.
+
+## **Modeling**
+For this project, the objective was to build a classification model to predict whether a SyriaTel customer will churn. Several machine learning algorithms were tested to identify the best-performing model.
+
+The general workflow was:
+
+1.  **Data Preprocessing:**
+    
+    -   Handled categorical features (_International Plan_, _Voice Mail Plan_) using OneHotEncoding.
+        
+    -   Standardized numerical features where necessary.
+        
+    -   Split the dataset into **train (70%)** and **test (30%)** sets.
+        
+2.  **Model Selection:**  
+    The following algorithms were evaluated:
+    
+    -   Logistic Regression
+        
+    -   Decision Tree Classifier
+        
