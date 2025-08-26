@@ -66,4 +66,5 @@ The general workflow was:
     -   Logistic Regression
         
     -   Decision Tree Classifier
-        
+
+![enter image description here](images/cmlog.png)
