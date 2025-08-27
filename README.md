@@ -67,4 +67,29 @@ The general workflow was:
         
     -   Decision Tree Classifier
 
-![enter image description here](images/cmlog.png)
+### **Confusion matrix for the logistic regression algorithm**
+![enter image description here](images/cmLog.png)
+
+### **Confusion matrix for the decision tree algorithm**
+![enter image description here](images/cmtree.png)
+
+### **The decision tree graph**
+![enter image description here](images/dtree.png)
+
+-   **Logistic Regression**
+    
+    -   Achieved **87% accuracy**, with strong performance in predicting non-churn customers (class 0).
+        
+    -   However, it performed poorly on detecting churners (class 1) with a **recall of 0.29**, meaning it missed many customers who actually churned.
+        
+    -   This makes it less useful for churn prediction, since the business goal is to catch as many potential churners as possible.
+        
+-   **Decision Tree**
+    
+    -   Outperformed Logistic Regression with an **accuracy of 94%** and much better balance between precision and recall for churners.
+        
+    -   The **recall of 0.65** indicates the model correctly identified 65% of churners, while maintaining high precision (0.92), meaning most predicted churners were indeed correct.
+        
+    -   This makes the Decision Tree more aligned with the business need of **early churn detection**.
+ 
+The **Decision Tree model** clearly performed better than Logistic Regression in identifying churners, with higher recall and F1-score
